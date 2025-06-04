@@ -1,7 +1,7 @@
 import logging
 from typing import Final
 
-DOMAIN = "dreame_vacuum"
+DOMAIN = "another_dreame_vacuum"
 LOGGER = logging.getLogger(__package__)
 
 UNIT_MINUTES: Final = "min"
