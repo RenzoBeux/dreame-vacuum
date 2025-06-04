@@ -1,23 +1,23 @@
 vacuum_clean_segment:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     segments:
-      example: "[3,2] or 3" 
+      example: "[3,2] or 3"
       required: true
       selector:
         object:
     repeats:
-      example: "[1,2] or 1" 
+      example: "[1,2] or 1"
       required: false
       selector:
         number:
           min: 1
           max: 3
     suction_level:
-      example: "[0,3] or 0" 
+      example: "[0,3] or 0"
       required: false
       selector:
         number:
@@ -34,7 +34,7 @@ vacuum_clean_segment:
 vacuum_clean_zone:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     zone:
@@ -43,14 +43,14 @@ vacuum_clean_zone:
       selector:
         object:
     repeats:
-      example: "[1,2] or 1" 
+      example: "[1,2] or 1"
       required: false
       selector:
         number:
           min: 1
           max: 3
     suction_level:
-      example: "[0,3] or 0" 
+      example: "[0,3] or 0"
       required: false
       selector:
         number:
@@ -67,23 +67,23 @@ vacuum_clean_zone:
 vacuum_clean_spot:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     points:
-      example: "[819,-263] or [[819,-263],[819,-263]]" 
+      example: "[819,-263] or [[819,-263],[819,-263]]"
       required: true
       selector:
         object:
     repeats:
-      example: "[1,2] or 1" 
+      example: "[1,2] or 1"
       required: false
       selector:
         number:
           min: 1
           max: 3
     suction_level:
-      example: "[0,3] or 0" 
+      example: "[0,3] or 0"
       required: false
       selector:
         number:
@@ -100,7 +100,7 @@ vacuum_clean_spot:
 vacuum_goto:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     x:
@@ -119,11 +119,11 @@ vacuum_goto:
 vacuum_follow_path:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     points:
-      example: "[819,-263] or [[819,-263],[900,-463]]" 
+      example: "[819,-263] or [[819,-263],[900,-463]]"
       required: false
       selector:
         object:
@@ -131,7 +131,7 @@ vacuum_follow_path:
 vacuum_remote_control_move_step:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     rotation:
@@ -154,7 +154,7 @@ vacuum_remote_control_move_step:
 vacuum_install_voice_pack:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     lang_id:
@@ -183,13 +183,13 @@ vacuum_install_voice_pack:
 vacuum_request_map:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
 
 vacuum_select_map:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     map_id:
@@ -202,7 +202,7 @@ vacuum_select_map:
 vacuum_delete_map:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     map_id:
@@ -215,19 +215,19 @@ vacuum_delete_map:
 vacuum_save_temporary_map:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
 
 vacuum_discard_temporary_map:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
 
 vacuum_replace_temporary_map:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     map_id:
@@ -240,7 +240,7 @@ vacuum_replace_temporary_map:
 vacuum_rename_map:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     map_id:
@@ -258,7 +258,7 @@ vacuum_rename_map:
 vacuum_restore_map:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     recovery_map_index:
@@ -278,7 +278,7 @@ vacuum_restore_map:
 vacuum_restore_map_from_file:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     file_url:
@@ -297,7 +297,7 @@ vacuum_restore_map_from_file:
 vacuum_backup_map:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     map_id:
@@ -310,7 +310,7 @@ vacuum_backup_map:
 vacuum_merge_segments:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     map_id:
@@ -328,7 +328,7 @@ vacuum_merge_segments:
 vacuum_split_segments:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     map_id:
@@ -354,7 +354,7 @@ vacuum_split_segments:
 vacuum_rename_segment:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     segment_id:
@@ -374,7 +374,7 @@ vacuum_rename_segment:
 vacuum_set_cleaning_sequence:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     cleaning_sequence:
@@ -386,7 +386,7 @@ vacuum_set_cleaning_sequence:
 vacuum_set_custom_cleaning:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     segment_id:
@@ -414,11 +414,11 @@ vacuum_set_custom_cleaning:
       required: true
       selector:
         object:
-        
+
 vacuum_set_restricted_zone:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     walls:
@@ -440,7 +440,7 @@ vacuum_set_restricted_zone:
 vacuum_reset_consumable:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     consumable:
@@ -466,7 +466,7 @@ vacuum_reset_consumable:
 vacuum_rename_shortcut:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     shortcut_id:
@@ -484,7 +484,7 @@ vacuum_rename_shortcut:
 vacuum_set_carpet_area:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     carpets:
@@ -496,12 +496,12 @@ vacuum_set_carpet_area:
       example: "[[819,-263,4424,2105],[-2001,-3050,-542,515]]"
       required: false
       selector:
-        object:    
+        object:
 
 vacuum_set_virtual_threshold:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     virtual_thresholds:
@@ -513,11 +513,11 @@ vacuum_set_virtual_threshold:
 vacuum_set_predefined_points:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     points:
-      example: "[819,-263] or [[819,-263],[900,-463]]" 
+      example: "[819,-263] or [[819,-263],[900,-463]]"
       required: false
       selector:
         object:
@@ -525,7 +525,7 @@ vacuum_set_predefined_points:
 vacuum_set_obstacle_ignore:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     x:
@@ -549,7 +549,7 @@ vacuum_set_obstacle_ignore:
 vacuum_set_router_position:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: vacuum
   fields:
     x:
@@ -568,7 +568,7 @@ vacuum_set_router_position:
 select_select_previous:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: select
   fields:
     cycle:
@@ -579,19 +579,19 @@ select_select_previous:
 select_select_first:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: select
 
 select_select_last:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: select
 
 select_select_next:
   target:
     entity:
-      integration: dreame_vacuum
+      integration: another_dreame_vacuum
       domain: select
   fields:
     cycle:

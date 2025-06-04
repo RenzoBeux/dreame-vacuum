@@ -28,11 +28,11 @@ if [ -n "$path" ]; then
     fi
     cd "$path/custom_components"
     wget "https://github.com/Tasshack/dreame-vacuum/releases/download/v2.0.0b17/dreame_vacuum.zip"
-    if [ -d "$path/custom_components/dreame_vacuum" ]; then
-        rm -R "$path/custom_components/dreame_vacuum"
+    if [ -d "$path/custom_components/another_dreame_vacuum" ]; then
+        rm -R "$path/custom_components/another_dreame_vacuum"
     fi
-    mkdir "$path/custom_components/dreame_vacuum"
-    unzip "$path/custom_components/dreame_vacuum.zip" -d "$path/custom_components/dreame_vacuum" >/dev/null 2>&1
+    mkdir "$path/custom_components/another_dreame_vacuum"
+    unzip "$path/custom_components/dreame_vacuum.zip" -d "$path/custom_components/another_dreame_vacuum" >/dev/null 2>&1
     rm "$path/custom_components/dreame_vacuum.zip"
     echo
     echo "Installation complete"
